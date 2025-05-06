@@ -1,0 +1,22 @@
+{
+  "name": "fullstack-mern-crud",
+  "version": "1.0.0",
+  "description": "MERN Stack CRUD Application with MySQL",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd backend-api && npm install && cd ../frontend-app && npm install",
+    "backend": "cd backend-api && node server.js",
+    "frontend": "cd frontend-app && npm start",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "setup-db": "cd backend-api && npx knex migrate:rollback --all && npx knex migrate:latest && npx knex seed:run"
+  },
+  "keywords": [
+    "mern",
+    "mysql",
+    "react",
+    "express",
+    "node"
+  ],
+  "author": "",
+  "license": "MIT"
+}

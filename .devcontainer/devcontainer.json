@@ -1,0 +1,36 @@
+{
+  "name": "MERN Stack Development",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/workspace",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22.14.0"
+    },
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  
+  "forwardPorts": [3000, 5000, 3306],
+  
+  "postCreateCommand": "npm install -g concurrently nodemon",
+  
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-node-azure-pack",
+        "mongodb.mongodb-vscode",
+        "mtxr.sqltools",
+        "mtxr.sqltools-driver-mysql"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      }
+    }
+  },
+  
+  "remoteUser": "node"
+}

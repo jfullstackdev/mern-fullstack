@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ..:/workspace:cached
+    command: sleep infinity
+    network_mode: service:db
+    environment:
+      - NODE_ENV=development
+      - DB_HOST=localhost
+      - DB_USER=root
+      - DB_PASSWORD=password
+      - DB_NAME=personal_details
+
+  db:
+    image: mysql:8.0
+    restart: unless-stopped
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=personal_details
+    ports:
+      - "3306:3306"
+    command: --default-authentication-plugin=mysql_native_password
+
+volumes:
+  mysql-data:
