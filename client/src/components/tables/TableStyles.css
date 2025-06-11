@@ -1,0 +1,95 @@
+/* Table Styles */
+.data-table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  text-align: left;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.data-table th {
+  background-color: #f8f9fa;
+  padding: 12px 15px;
+  font-weight: bold;
+}
+
+.data-table td {
+  padding: 10px 15px;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Cell Styles */
+.identifier-cell {
+  width: 100%;
+  font-weight: 600;
+}
+
+.details-cell {
+  width: 100%;
+}
+
+.cell-content {
+  width: 100%;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.editable-cell-input {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+}
+
+/* Action Buttons */
+.action-cell {
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.action-button {
+  margin: 0 5px;
+  padding: 6px 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.action-button:hover {
+  background-color: #e9ecef;
+}
+
+.edit-button {
+  color: #007bff;
+}
+
+.delete-button {
+  color: #dc3545;
+}
+
+.done-button {
+  color: #28a745;
+}
+
+/* Error Messages */
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+}
+
+/* Add Button */
+.add-button-container {
+  text-align: right;
+}
