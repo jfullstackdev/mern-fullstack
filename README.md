@@ -24,10 +24,6 @@ This project is configured to work seamlessly with GitHub Codespaces, allowing y
 
 2. **Setting up the Environment**:
 
-   - Copy the environment configuration file:
-     ```bash
-     cp backend-api/env.example backend-api/.env
-     ```
    - Install all dependencies from the root directory:
      ```bash
      npm run install-all
