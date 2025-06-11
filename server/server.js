@@ -77,7 +77,6 @@ const startServer = (port) => {
       console.log(
         `Server running on port ${actualPort} in ${process.env.NODE_ENV} mode`
       );
-
     });
 };
 
