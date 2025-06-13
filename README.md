@@ -174,3 +174,5 @@ a package called body-parser to make it work. While in Laravel,
 it works out of the box. Or in MERN, to avoid installing
 body-parser, you can send data to the server
 using JSON format.
+
+another example is the Laravel Logging and Validation and a lot of PHP functions that can be used for Sanitation 
