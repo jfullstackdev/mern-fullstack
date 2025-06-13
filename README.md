@@ -1,5 +1,7 @@
 # Full-Stack MERN CRUD Sample
 
+![alt text](image.png)
+
 This is a template to create a full-stack MERN CRUD application.
 It is a simple application that allows you to create, read, update,
 and delete a list of items. It is a good starting point
