@@ -104,7 +104,7 @@ function PersonalDetails() {
         <Col>
           <Card>
             <Card.Header as="h2" className="bg-primary text-white">
-              Personal Details Management
+              User Profile Dashboard
             </Card.Header>
             <Card.Body>
               <DataList

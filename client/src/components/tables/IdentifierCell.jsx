@@ -6,7 +6,7 @@ import "./TableStyles.css";
  * @param {object} cell - The cell information from react-table
  */
 const IdentifierCell = ({ cell: { value } }) => (
-  <div className="identifier-cell">{value}</div>
+  <span className="identifier-cell">{value}</span>
 );
 
 IdentifierCell.propTypes = {

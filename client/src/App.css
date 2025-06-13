@@ -14,7 +14,9 @@ body {
 
 .card {
   margin-bottom: 2em;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.18),
+    0 1.5px 8px rgba(0, 0, 0, 0.1); /* Stronger, more layered shadow */
 }
 
 .api-message {

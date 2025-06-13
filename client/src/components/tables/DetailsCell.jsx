@@ -15,7 +15,7 @@ const DetailsCell = ({
   editingIndex,
   setEditingIndex,
 }) => (
-  <div className="details-cell">
+  <span className="details-cell">
     <EditableCell
       value={value}
       row={row}
@@ -23,7 +23,7 @@ const DetailsCell = ({
       editingIndex={editingIndex}
       setEditingIndex={setEditingIndex}
     />
-  </div>
+  </span>
 );
 
 DetailsCell.propTypes = {

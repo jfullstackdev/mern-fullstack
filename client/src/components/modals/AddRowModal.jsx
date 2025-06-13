@@ -57,9 +57,8 @@ function AddRowModal({ addRow }) {
   return (
     <div>
       <Button
-        variant="primary"
+        className="add-row-btn btn btn-primary"
         onClick={openModal}
-        size="sm"
         aria-label="Add new record"
       >
         <span aria-hidden="true">➕</span> Add

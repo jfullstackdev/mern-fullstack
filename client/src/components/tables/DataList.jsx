@@ -150,7 +150,17 @@ function DataList({
                         onClick={() => deleteMyData(row.index)}
                         aria-label="Delete row"
                       >
-                        <span aria-hidden="true">🗑️</span> Delete
+                        <span
+                          aria-hidden="true"
+                          style={{
+                            fontSize: "0.75em",
+                            color: "#dc3545",
+                            verticalAlign: "middle",
+                          }}
+                        >
+                          ❌
+                        </span>{" "}
+                        Delete
                       </button>
                     </>
                   )}
