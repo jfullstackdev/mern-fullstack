@@ -65,19 +65,24 @@
 .action-cell {
   vertical-align: middle;
   white-space: nowrap;
-  text-align: center;
+  text-align: right;
+  padding-right: 8px;
 }
 
 .action-button {
-  min-width: 90px;
-  padding: 6px 10px;
+  min-width: 32px;
+  height: 32px;
+  padding: 0;
   font-size: 1rem;
   border-radius: 4px;
   background-color: #f8f9fa;
   border: 1px solid #adb5bd; /* Updated to match table outer border color */
   color: #007bff;
-  margin: 0 5px;
+  margin: 0 1.5px;
   transition: background-color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .action-button:hover {
@@ -109,11 +114,14 @@
 /* Add Button */
 .add-button-container {
   text-align: right;
+  padding-right: 8px;
 }
 
 .add-row-btn {
-  min-width: 90px;
-  padding: 6px 10px;
+  min-width: 66px;
+  width: 66px;
+  height: 32px;
+  padding: 0;
   font-size: 1rem;
   border-radius: 4px;
   background-color: #fff !important;
@@ -123,7 +131,10 @@
   transition:
     background-color 0.2s,
     color 0.2s;
-  margin: 0 5px;
+  margin: 0 1.5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .add-row-btn:hover {

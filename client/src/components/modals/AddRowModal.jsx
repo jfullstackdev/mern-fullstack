@@ -61,7 +61,7 @@ function AddRowModal({ addRow }) {
         onClick={openModal}
         aria-label="Add new record"
       >
-        <span aria-hidden="true">➕</span> Add
+        <span aria-hidden="true">➕</span>
       </Button>
 
       <Modal show={isModalOpen} onHide={closeModal} centered backdrop="static">
@@ -94,11 +94,16 @@ function AddRowModal({ addRow }) {
               />
             </Form.Group>
             <div className="d-flex justify-content-end mt-4">
-              <Button variant="secondary" onClick={closeModal} className="me-2">
-                Cancel
+              <Button
+                variant="secondary"
+                onClick={closeModal}
+                className="me-2"
+                aria-label="Cancel"
+              >
+                <span aria-hidden="true">✖️</span>
               </Button>
-              <Button variant="primary" type="submit">
-                Add Record
+              <Button variant="primary" type="submit" aria-label="Add Record">
+                <span aria-hidden="true">✔️</span>
               </Button>
             </div>
           </Form>

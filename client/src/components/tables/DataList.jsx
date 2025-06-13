@@ -134,7 +134,7 @@ function DataList({
                       onClick={() => setEditingIndex(null)}
                       aria-label="Done editing"
                     >
-                      Done
+                      <span aria-hidden="true">✔️</span>
                     </button>
                   ) : (
                     <>
@@ -143,7 +143,7 @@ function DataList({
                         onClick={() => setEditingIndex(row.index)}
                         aria-label="Edit row"
                       >
-                        <span aria-hidden="true">✏️</span> Edit
+                        <span aria-hidden="true">✏️</span>
                       </button>
                       <button
                         className="action-button delete-button"
@@ -153,14 +153,14 @@ function DataList({
                         <span
                           aria-hidden="true"
                           style={{
-                            fontSize: "0.75em",
+                            fontSize: "1em",
                             color: "#dc3545",
                             verticalAlign: "middle",
+                            display: "inline-block",
                           }}
                         >
                           ❌
-                        </span>{" "}
-                        Delete
+                        </span>
                       </button>
                     </>
                   )}
