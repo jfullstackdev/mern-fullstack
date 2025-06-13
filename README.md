@@ -175,4 +175,32 @@ it works out of the box. Or in MERN, to avoid installing
 body-parser, you can send data to the server
 using JSON format.
 
-another example is the Laravel Logging and Validation and a lot of PHP functions that can be used for Sanitation 
+Here is a more detailed comparison :
+
+| **Feature**                 | **Laravel**                    | **MERN**                                 |
+| --------------------------- | ------------------------------ | ---------------------------------------- |
+| **Validation**              | ✅ Built-in                     | ❌ External libs (Joi, express-validator) |
+| **Authentication**          | ✅ Built-in                     | ❌ Manual setup (JWT, Passport)           |
+| **Authorization**           | ✅ Built-in (Gates & Policies)  | ❌ Custom logic                           |
+| **Routing**                 | ✅ Clean, with middleware       | ✅ Express, manual middleware             |
+| **Logging**                 | ✅ Monolog built-in             | ❌ Manual (Winston, Morgan)               |
+| **ORM / DB Access**         | ✅ Eloquent (SQL)               | ✅ Mongoose (Mongo)                       |
+| **Templating**              | ✅ Blade                        | ✅ JSX (React)                            |
+| **CLI Tools**               | ✅ Artisan                      | ❌ Basic (npm/yarn scripts)               |
+| **Sanitization**            | ⚠️ PHP functions/manual        | ❌ Mostly manual                          |
+| **Migrations & Seeding**    | ✅ Built-in                     | ❌ Manual via ORM                         |
+| **Queue System**            | ✅ Native support               | ❌ External setup (Bull, etc.)            |
+| **Task Scheduling**         | ✅ Built-in Scheduler           | ❌ Cron + Libs                            |
+| **Testing Framework**       | ✅ PHPUnit                      | ❌ Manual setup (Jest, Mocha)             |
+| **Localization (i18n)**     | ✅ Built-in                     | ❌ Use external libs (i18next)            |
+| **Events & Broadcasting**   | ✅ Native support (Echo)        | ❌ Custom (Socket.io)                     |
+| **File Storage**            | ✅ Unified API                  | ❌ Manual (e.g. multer)                   |
+| **API Resource Formatting** | ✅ With Resource classes        | ❌ Manual                                 |
+| **Security Features**       | ✅ CSRF, rate limiting, hashing | ❌ Manual (helmet, bcrypt)                |
+| **Official Ecosystem**      | ✅ Strong ecosystem             | ❌ Fragmented community libs              |
+
+**Legend:**
+
+* ✅ = Built-in / First-class support
+* ❌ = Requires manual setup / External libraries
+* ⚠️ = Possible, but partially manual or not first-class
