@@ -103,7 +103,10 @@ function PersonalDetails() {
       <Row>
         <Col>
           <Card>
-            <Card.Header as="h2" className="bg-primary text-white">
+            <Card.Header
+              as="h2"
+              style={{ background: "#3399cc", color: "#fff" }}
+            >
               User Profile Dashboard
             </Card.Header>
             <Card.Body>

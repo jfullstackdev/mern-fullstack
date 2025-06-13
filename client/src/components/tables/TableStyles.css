@@ -116,13 +116,15 @@
   padding: 6px 10px;
   font-size: 1rem;
   border-radius: 4px;
-  background-color: #0d6efd !important; /* Bootstrap primary blue */
-  border: 1px solid #adb5bd !important; /* Match table outer border color */
-  color: #fff !important;
-  transition: background-color 0.2s;
+  background-color: #fff !important;
+  border: 1.5px solid #3399cc !important;
+  color: #3399cc !important;
+  font-weight: 600;
+  transition: background-color 0.2s, color 0.2s;
   margin: 0 5px;
 }
 
 .add-row-btn:hover {
-  background-color: #0b5ed7 !important;
+  background-color: #e3f2fa !important;
+  color: #258fd6 !important;
 }

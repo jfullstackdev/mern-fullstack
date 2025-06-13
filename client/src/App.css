@@ -9,7 +9,10 @@
 }
 
 body {
-  background-color: #f8f9fa;
+  background: linear-gradient(120deg, #4ca2cd 0%, #67b26f 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 .card {
