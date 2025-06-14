@@ -1,9 +1,12 @@
 > ⚠️ **Heads Up: Major Overhaul in Progress**  
-> This project is undergoing a complete restructure on
-> the [`migrate/system-overhaul`](https://github.com/jfullstackdev/mern-fullstack/tree/migrate/major-overhaul) branch.
-> Once complete, this branch will **replace `main` via a force push** to align the default branch with the new architecture.
-> ⚠️ **Any existing local clones of the repository will become outdated and may break.**
-> You will need to **re-clone the repository** once the new `main` branch is live.
+> This project is currently undergoing a complete restructure on the  
+> [`migrate/system-overhaul`](https://github.com/jfullstackdev/mern-fullstack/tree/migrate/major-overhaul) branch.  
+> 
+> 🚨 On **June 22, 2025**, this branch will **replace `main` via a force push** to align with the new architecture.  
+> 
+> ❗ **Important:**  
+> - Any existing local clones of the repository will become outdated and may break.  
+> - You will need to **re-clone the repository** once the new `main` is live.
 
 # Full-Stack MERN CRUD Sample
 This is a template to create a full-stack MERN CRUD application. 
