@@ -20,9 +20,15 @@ This project is configured to work seamlessly with GitHub Codespaces, allowing y
 
 1. **Open in Codespaces**:
 
-   - Click the "Code" button on the GitHub repository
-   - Select the "Codespaces" tab
-   - Click "Create codespace on main"
+   - **Open a Codespace directly from GitHub:**
+      - You can click the "Code" button on the
+        repo page and select "Create codespace on main" (or another branch).
+        No need to fork or clone first — GitHub will automatically provision a
+        Codespace with the repo contents and devcontainer setup.
+   - **Fork the repository:**
+      - If you want your own copy of the repository (for making changes or
+        keeping your own Codespace), fork it on GitHub, then open a Codespace
+        from your fork.
 
 2. **Setting up the Environment**:
 
