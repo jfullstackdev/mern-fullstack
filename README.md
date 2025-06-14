@@ -1,11 +1,11 @@
 > ⚠️ **Heads Up: Major Overhaul in Progress**  
-> This project is currently undergoing a complete restructure on the  
+> This project is currently undergoing a complete restructure on the
 > [`migrate/system-overhaul`](https://github.com/jfullstackdev/mern-fullstack/tree/migrate/major-overhaul) branch.  
 > 
 > 🚨 On **June 22, 2025**, this branch will **replace `main` via a force push** to align with the new architecture.  
 > 
 > ❗ **Important:**  
-> - Any existing local clones of the repository will become outdated and may break.  
+> - Any existing local clones of the repository will become outdated and may break.
 > - You will need to **re-clone the repository** once the new `main` is live.
 
 # Full-Stack MERN CRUD Sample
