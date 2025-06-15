@@ -1,0 +1,45 @@
+#root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.App {
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(120deg, #4ca2cd 0%, #67b26f 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.card {
+  margin-bottom: 2em;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.18),
+    0 1.5px 8px rgba(0, 0, 0, 0.1); /* Stronger, more layered shadow */
+}
+
+.api-message {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+}
+
+.api-message h2 {
+  margin-bottom: 1rem;
+  color: #213547;
+}
+
+.api-message .error {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.api-message .success {
+  color: #2ecc71;
+  font-weight: bold;
+}

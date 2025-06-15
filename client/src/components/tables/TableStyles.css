@@ -1,0 +1,143 @@
+/* Table Styles */
+.data-table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  text-align: left;
+  table-layout: fixed;
+  border-collapse: separate; /* Use separate to allow visible outer border */
+  border-spacing: 0;
+  border: 2px solid #adb5bd; /* Outer border now lighter grey */
+  border-radius: 8px; /* Slightly more rounded for elevation effect */
+  overflow: hidden; /* Ensures border-radius is visible */
+  background-color: #fff;
+}
+
+.data-table th {
+  background-color: #cfe2ff; /* lighter blue, matches Bootstrap's .table-primary */
+  color: #213547; /* dark text for readability */
+  padding: 12px 15px;
+  font-weight: bold;
+  vertical-align: middle; /* Ensure consistent vertical alignment with data cells */
+}
+
+.data-table td {
+  padding: 10px 15px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  vertical-align: middle;
+  height: auto;
+  display: table-cell;
+  align-items: initial;
+}
+
+/* Cell Styles */
+.identifier-cell,
+.details-cell,
+.cell-content {
+  width: 100%;
+  height: 100%;
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+.details-cell {
+  font-weight: normal;
+}
+
+.editable-cell-input {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+}
+
+/* Action Buttons */
+.action-cell {
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: right;
+  padding-right: 8px;
+}
+
+.action-button {
+  min-width: 32px;
+  height: 32px;
+  padding: 0;
+  font-size: 1rem;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  border: 1px solid #adb5bd; /* Updated to match table outer border color */
+  color: #007bff;
+  margin: 0 1.5px;
+  transition: background-color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-button:hover {
+  background-color: #e9ecef;
+}
+
+.edit-button {
+  color: #007bff;
+}
+
+.delete-button {
+  color: #dc3545;
+}
+
+.done-button {
+  color: #28a745;
+}
+
+/* Error Messages */
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+}
+
+/* Add Button */
+.add-button-container {
+  text-align: right;
+  padding-right: 8px;
+}
+
+.add-row-btn {
+  min-width: 66px;
+  width: 66px;
+  height: 32px;
+  padding: 0;
+  font-size: 1rem;
+  border-radius: 4px;
+  background-color: #fff !important;
+  border: 1.5px solid #3399cc !important;
+  color: #3399cc !important;
+  font-weight: 600;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+  margin: 0 1.5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-row-btn:hover {
+  background-color: #e3f2fa !important;
+  color: #258fd6 !important;
+}
